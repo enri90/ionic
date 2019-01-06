@@ -102,8 +102,17 @@ This utility is really handy when
   </ion-list>
 </ion-content>
 ```
+### IONIC CONTROLLER
+```html
+  <ion-reorder-group [disabled]="reorder" (ionItemReorder)="reorderItem($event)">
+    
+  .....
+    
+  reorderItem(indexes){
+    indexes.detail.complete();
+  }
 
-
+```
 ### Javascript
 
 ```html
